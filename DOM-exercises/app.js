@@ -3,7 +3,7 @@ it easier to comment/uncomment */
 
 
 // Select the section with an id of container without using querySelector.
-const container = document.getElementById("container");
+//const container = document.getElementById("container");
 
 // Select the section with an id of container using querySelector.
 //const containerB = document.querySelector("#container");
@@ -59,4 +59,26 @@ for(let li of list) {
 const footer = document.querySelector(".footer");
 footer.remove();
 */
+
+const friendList = document.querySelector("#friend-list");
+const form = document.querySelector("form");
+
+friendList.addEventListener("click", function(event) {
+    if (event.target.tagName === "BUTTON") {
+      event.target.parentElement.remove();
+    }
+  });
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const newFriendInput = document.querySelector("#first-name");
+  const newLi = document.createElement("li");
+  const newButton = document.createElement("button");
+  newLi.innerText = newFriendInput.value;
+  newButton.innerText = "Remove";
+
+  newLi.append(newButton);
+  friendList.append(newLi);
+  form.reset();
+});
 
