@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+section {
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+form input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 400px;
+    
+}
+ul li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+ul li .delete {
+    margin-left: 1rem;
+}
+
+.strike {
+    text-decoration: line-through;
+}

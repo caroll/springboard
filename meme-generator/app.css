@@ -1,0 +1,59 @@
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+section {
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+form input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 400px;
+    
+}
+ul li {
+    list-style-type: none;
+    display: flex;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.block {
+    width: 90%;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.block .top {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.block .bottom {
+    position: absolute; 
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.block img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 600px;
+}
+.action {
+    width: 10%;
+    padding: 1rem;
+}
+.action button {
+    text-align: center;
+}

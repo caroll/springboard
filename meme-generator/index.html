@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>MEME generator</h1>
+    <section id="add-meme">
+        <h2>Create new MEME</h2>
+        <form id="meme-info">
+            <label for="top-text">Top text</label>
+            <input type="text" name="top-text" id="top-text" required>
+            <label for="bottom-text">Bottom text</label>
+            <input type="text" name="bottom-text" id="bottom-text" required>
+            <label for="img-url">Image URL</label>
+            <input type="url" name="img-url" id="img-url" required>
+            <button>Submit</button>
+        </form>
+    </section>
+    <section >
+        <ul id="list-meme"></ul>
+    </section>
+
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
