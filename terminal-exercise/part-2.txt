@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# 1 What does the man command do? Type in man rm. How do you scroll and get out?
+# shows the manual for the command, with all the details about what it does and all its flags
+# to get out use the "q" key (quit)
+# use the up and down arrows to scroll, page up and page down also works but there is no in between
+
+# 2 Look at the man page for ls. What does the -l flag do? What does the -a flag do?
+# -l show a long listing format, or shows each file/folder in one line and each of them with some extra details,
+# as owner, group, permissions, etc.
+# -a make sure to show all files, even the hidden ones
+
+# 3 How do you jump between words in the terminal? (I use Linux, Debian)
+# alt + f = 1 word forward
+# alt + b = 1 word back
+
+# 4 How do you get to the end of a line in terminal?
+# ctrl + e = end of line
+
+# 5 How do you move your cursor to the beginning in terminal?
+# ctrl + a = beginning of line
+
+# 6 How do you delete a word (without pressing backspace multiple times) in terminal?
+# ctrl + w = delete word to the left
+# alt + d = delete word to the right
+
+# 7 What is the difference between a terminal and shell?
+# Terminal is the program/software where the computer shell runs
+# Shell is the layer between the user and the Operational System, where we can interact with the SO
+
+# 8 What is an absolute path?
+# Absolute path is the full path name of a file/folder, starting from the root directory, so does not 
+# matter where you're in the filesystem, you'll always be able to find it.
+# Ex.: /home/caroll/sandbox/github/springboard-repos/snippets/terminal-exercise/part-2.txt
+
+# 9. What is an relative path?
+# Relative path name represents a file/folder based (with the starting point) on the current working directory.
+# Ex.: terminal-exercise/part-2.txt or ../terminal-exercise/part-2.txt
+
+# 10. What is a flag? Give three examples of flags you have used.
+# --help short version of the man (not all applications have, but it's useful)
+# cp -r <orig-folder> <dest-folder> where -r copies all the content inside of the original folder "recursively" 
+# -v verbose, to show in the terminal what is happening, step-by-step
+
+#11. What do the r and f flags do with the rm command?
+# r removes recursively, if it's a folder, all files and other folders inside it will be deleted too.
+# f force, do anything we asked for without questioning, even when we do dumb sh*t.
