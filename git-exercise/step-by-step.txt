@@ -1,0 +1,55 @@
+
+# create folder
+mkdir learn_git_again
+
+# cd into new folder
+cd learn_git_again
+
+# create file
+touch third.txt
+
+# initialize repository
+git init 
+
+# add file to the staging area
+git add third.txt
+
+# commit with message
+git commit third.txt -m "adding third.txt"
+
+# check my commit
+git log
+
+# Create another file
+touch fourth.txt
+
+# add file to the staging area
+git add fourth.txt
+
+# commit with message
+git commit fourth.txt -m "adding fourth.txt"
+
+# remove the third.txt file
+rm third.txt
+git commit -am "removing third.txt file"
+
+# check my commit
+git log
+
+---
+# mine was the default (less)
+git config --global core.pager 'cat'
+
+# List all global configurations for git on my laptop
+git config -l
+
+user.name=Ana Carolina Comandulli
+user.email=carolcomandulli@gmail.com
+alias.ci=commit
+alias.co=checkout
+alias.st=status
+color.advice=always
+init.defaultbranch=main
+core.editor=code --wait
+core.pager=cat
+help.autocorrect=1
