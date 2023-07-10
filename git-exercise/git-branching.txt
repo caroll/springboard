@@ -1,0 +1,28 @@
+# What ***git*** command creates a branch?
+
+git branch <new-branch-name> or git checkout -b <new-branch-name>
+
+# What is the difference between a fast-forward and recursive merge?
+
+fast-forward: has a straight line of history 
+
+recursive: has multiple lines, 
+
+When git realises that there were no new commits to the target branch, the history is 
+still a straight line, it can use FF and just merge the commits from the branch into 
+the target and move the head forward, but if the target also had new commits, git will 
+analize and recursively proccess the merging.
+
+# What ***git*** command changes to another branch?
+
+git checkout <branch-name>
+
+# What ***git*** command deletes a branch?
+
+git branch -d <branch-name>
+
+# How do merge conflicts happen?
+
+When there were changes in both the branch and the target branch in a merge, in a 
+specific part of the code. Git can't decide which version is the right one, so it 
+prompts for the humans to fix it.  
