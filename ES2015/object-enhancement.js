@@ -43,17 +43,12 @@ function createAnimal ( species , verb , noise ) {
     return {
         species,
         verb,
-        noise
-    }
-}
-
-function createAnimal ( species , verb , noise ) {
-    return {
-        species,
-        verb,
         noise,
         poke() {
-          return this.noise;
+          return this.verb + " -> " +this.noise;
         }
     }
 }
+
+// x = createAnimal("dog","bark","woof");
+// x.poke()
