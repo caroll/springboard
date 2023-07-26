@@ -6,6 +6,8 @@ const bottomText = document.querySelector('input[name="bottom-text"]');
 const imgURL = document.querySelector('input[name="img-url"]');
 const memeList = document.querySelector('#list-meme');
 
+// FIXME
+
 form.addEventListener( "submit" , function(e) {
     e.preventDefault();
     // creates top text
