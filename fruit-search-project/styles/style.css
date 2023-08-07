@@ -35,3 +35,8 @@ ul li:hover {
   font-weight: bold;
 }
 */
+
+label, button {
+  display: block;
+  margin-top: 1em;
+}
