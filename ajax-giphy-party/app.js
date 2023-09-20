@@ -27,7 +27,7 @@ function addGIF( res ){
     for (let x of res.data){
         console.log(x["embed_url"]);
         let i = document.createElement("img");
-        i.setAttribute("src", x["embed_url"] );
+        i.setAttribute("src", x["url"] );
 
         const newLine = document.createElement("li");
         newLine.append(i);
